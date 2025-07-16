@@ -1,0 +1,38 @@
+{
+  "name": "npm-library-boilerplate",
+  "version": "1.0.0",
+  "description": "A professional boilerplate for creating NPM libraries.",
+  "author": "Efe Toker <efetoker@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/efetoker/npm-library-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "template",
+    "typescript",
+    "npm",
+    "library"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint .",
+    "test": "jest",
+    "dev": "npm run build -- --watch",
+    "prepublishOnly": "npm test && npm run lint && npm run build"
+  },
+  "devDependencies": {}
+}
