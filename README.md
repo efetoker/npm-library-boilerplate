@@ -2,6 +2,7 @@
 
 [![Build Status](https://github.com/efetoker/npm-library-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/efetoker/npm-library-boilerplate/actions/workflows/ci.yml)
 [![GitHub license](https://img.shields.io/github/license/efetoker/npm-library-boilerplate)](https://github.com/efetoker/npm-library-boilerplate/blob/main/LICENSE)
+[![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](./coverage/lcov-report/index.html)
 [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 
 A professional boilerplate for creating modern NPM libraries with TypeScript.
