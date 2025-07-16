@@ -1,5 +1,9 @@
 # NPM Library Boilerplate
 
+[![Build Status](https://github.com/efetoker/npm-library-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/efetoker/npm-library-boilerplate/actions/workflows/ci.yml)
+[![GitHub license](https://img.shields.io/github/license/efetoker/npm-library-boilerplate)](https://github.com/efetoker/npm-library-boilerplate/blob/main/LICENSE)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
+
 A professional boilerplate for creating modern NPM libraries with TypeScript.
 
 ## ✨ Features
@@ -40,3 +44,15 @@ The `prepublishOnly` script will automatically run tests, lint, and build the pr
 ```bash
 npm publish
 ```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https.github.com/efetoker/npm-library-boilerplate/issues).
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 💖 Code of Conduct
+
+We are committed to providing a welcoming and inclusive environment for everyone. Please see our [Code of Conduct](CODE_OF_CONDUCT.md) for more information.
