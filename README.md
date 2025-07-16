@@ -15,7 +15,7 @@ A professional boilerplate for creating modern NPM libraries with TypeScript.
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/your-username/npm-library-boilerplate.git](https://github.com/your-username/npm-library-boilerplate.git) my-new-library
+    git clone https://github.com/efetoker/npm-library-boilerplate.git my-new-library
     cd my-new-library
     ```
 
