@@ -4,8 +4,10 @@ const tsParser = require("@typescript-eslint/parser");
 const typescriptEslint = require("@typescript-eslint/eslint-plugin");
 const globals = require("globals");
 const js = require("@eslint/js");
-
 const { FlatCompat } = require("@eslint/eslintrc");
+
+const promisePlugin = require("eslint-plugin-promise");
+const securityPlugin = require("eslint-plugin-security");
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
@@ -27,6 +29,14 @@ module.exports = defineConfig([
       "eslint:recommended",
       "plugin:prettier/recommended"
     ),
+    plugins: {
+      promise: promisePlugin,
+      security: securityPlugin,
+    },
+    rules: {
+      ...promisePlugin.configs.recommended.rules,
+      ...securityPlugin.configs.recommended.rules,
+    },
   },
   {
     files: ["**/*.ts"],
@@ -50,8 +60,13 @@ module.exports = defineConfig([
 
     plugins: {
       "@typescript-eslint": typescriptEslint,
+      promise: promisePlugin,
+      security: securityPlugin,
     },
 
-    rules: {},
+    rules: {
+      ...promisePlugin.configs.recommended.rules,
+      ...securityPlugin.configs.recommended.rules,
+    },
   },
 ]);
